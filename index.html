@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Including Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+
+    
+    <title>ChatPDF - Custom</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <header>
+            <h1 class="text-center bg-light p-3">ChatPDF: The Cell</h1>
+        </header>
+        <main>
+            <div class="chat-area border rounded p-3 mb-3">
+                <div class="messages overflow-auto" style="max-height: 400px;">
+                    <!-- Messages -->
+                </div>
+                <div class="user-input mt-3">
+                    <textarea class="form-control mb-3" placeholder="Type your message here..." id="userMessage"></textarea>
+                    <button class="btn btn-primary btn-block" id="sendMessageButton">Send</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Including jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Include custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
