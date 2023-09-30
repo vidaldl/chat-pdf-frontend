@@ -1,5 +1,4 @@
 // Import API Token
-import apiToken from "./env";
 
 // script.js
 $(document).ready(function() {
@@ -16,11 +15,11 @@ $(document).ready(function() {
         const config = {
             method: 'POST',
             headers: {
-                "x-api-key": "",
+                "x-api-key": apiToken,
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                sourceId: "cha_fMMlfQu5HVQyVOSPLowYj",
+                sourceId: `cha_${pdfId}`,
                 messages: [
                     {
                         role: "user",
@@ -42,3 +41,4 @@ $(document).ready(function() {
             });
     });
 });
+
